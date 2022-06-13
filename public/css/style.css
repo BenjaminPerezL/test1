@@ -1,0 +1,325 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+body{
+    height:100%;
+    background-color:white;
+    background: linear-gradient(to right,black,rgb(44, 17, 51),rgb(77, 27, 77),rgb(48, 8, 48),rgb(20, 5, 20),rgb(46, 1, 46));
+    margin: 0px;
+    background-size: 400% 400%;
+    animation: animate-background 22s infinite ease;
+    
+}
+
+#cuerpo{
+    position: relative;
+    display: flex;
+}
+
+#izq, #der{
+    display: inline-block;
+    width: 200px;
+    height:6412px;
+    
+    background-repeat:  repeat-y;
+    background-size: contain;
+}
+
+#izq{
+    background-image: url('D:/3er semestre/prog web/elblok/img/adgatito.jpg');
+}
+
+#der{
+    background-image: url('D:/3er semestre/prog web/elblok/img/ad2.jpg');
+}
+
+#izq img, #der img{
+    object-fit: contain;
+    width: 200px;
+    
+    
+}
+
+#centro{
+    width: 100%;
+}
+
+header{
+        content: "";
+        padding: 2rem 2rem;
+        background-size: 400% 400%;
+        animation: animate-background 22s infinite ease;
+        cursor:progress;
+        padding-top: 0px;
+        
+}
+
+header h1{
+        text-align: center;
+        font-size: 7rem;
+        margin-top: 30px;
+        margin-bottom: 30px;
+}
+
+.menu{
+    position: relative;
+    display: flex;
+    margin:0px;
+    padding: 0px;
+    color: white;
+    background-color: rgba(29, 29, 29, 0.575);
+    border: 0px;
+    border-collapse: collapse;
+    width:100%; 
+    
+    bottom: 2.38rem;
+}
+
+.nombremenu active {
+    
+    color: black;
+    font-size: large;
+    
+}
+
+.itemmenu active {
+    background-color: white;
+    
+    color: aqua;
+}
+
+.itemmenu{
+    /* display: inline-block; */
+    width:20%;
+    border: 0px;
+    padding: 7px 0px;
+    color: white;
+    background-color: transparent;
+    border-collapse: collapse;
+    
+    cursor: pointer;
+    text-align: center;
+    margin: 0px;
+    border-radius: 0.5rem;
+    
+}
+
+.nombremenu{
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease;
+    width: 100%;
+    display: block;
+    font-size: 1.6rem;
+}
+
+.linkmenu{
+    width: 100%;
+}
+
+
+.nombremenu:hover{
+    color: black;
+    
+}
+
+
+.itemmenu:hover{
+    background-color: white;
+    /* .itemmenu.style.color:black; */
+}
+
+.itemmenu:hover>a{
+    background-color: white;
+    color:black;
+}
+
+a {
+    color: rgb(236, 69, 236);
+}
+
+.nombremenu active {
+    
+    color: black;
+    
+    font-size: larger;
+}
+
+.itemmenu active {
+    background-color: white;
+    font-size: large;
+    color: aqua;
+}
+
+.tabla.usuarios{
+    display: inline-block;
+    width: 50%;
+    
+}
+
+
+
+.formulario.usuarios{
+    display: inline-block;
+    
+     
+    width: 100%;
+    
+
+}
+
+
+.ingreso.formulario{
+    padding: 4px;
+}
+
+
+
+form{
+    background-color: rgba(128, 128, 128, 0.582);
+    color: white;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.postcontainer{
+    width: 510px;
+    margin: 0 auto;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    padding-left : 20px ;
+    padding-right: 20px ;
+    color: white;
+  }
+  
+
+div article{
+    /* que queremos animar(que propiedad) - tiempo entre incio final- algoritmo que acelerea desacelera animacion */
+    transition: box-shadow 0.3s ease;
+    margin: 2rem;
+    margin-bottom: 7rem;
+    
+    padding: 25.5px 25.5px 0;    
+    background-color: rgb(255, 255, 255);
+    width: 450px;
+    height: 609.4px;
+    /* border:solid 1px rgb(156, 155, 155); */
+    border-radius: 0.5rem;
+    cursor:grab;
+    
+}
+div article:hover{
+    /* derecha abajo difuminacion color(r,g,b,visibilidad) */
+    box-shadow: 0 0.1rem 1rem rgb(255, 145, 0);
+}
+
+div article a{
+    transition: color 0.3s ease;
+}
+
+div article a:hover{
+    color: aquamarine;
+
+}
+
+
+article img{
+    object-fit:cover;
+    width: 450px;
+    height: 450px;
+}
+
+
+
+
+footer{
+       
+    padding: 2rem;
+    background-color: rgb(39, 38, 38);
+    color: whitesmoke;
+}
+
+footer div{
+    float: right;
+    
+
+}
+
+footer a{
+    transition:color 0.3s ease ;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: red;
+}
+
+footer p{
+    margin: 0%;
+}
+
+.divgriffith{
+    width: 450px;
+    height: 450px;
+    background-color: red;
+    transition: background-image 0.6s ease;
+    object-fit:contain;
+    background-image: url('eclipse.jpg') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.divgriffith:hover{
+    background-image: url('bersrk.jpg')
+}
+
+@keyframes animate-background {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+#siguiente{
+    float: right;
+    width: 20%;
+
+}
+#anterior{
+    float:left;
+    width: 20%;
+    
+
+}
+#numerofoto{
+    text-align: center;
+    align-content: center;
+    vertical-align: middle;
+    
+    margin: 0 27%;
+    
+}
+
+form{
+    padding: 1rem;
+    color: white;
+}
+
+form button{
+    height: 2rem;
+}
