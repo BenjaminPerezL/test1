@@ -1,7 +1,7 @@
 @extends('/layouts/master')
 
 @section('contenido-principal')
-<section class="postcontainer">
+<div class="postcontainer">
     <article>
         
         
@@ -45,7 +45,7 @@
         <p>⚽⚽⚽⚽</p>
         <a href="" target="_blank">txt</a>
     </article>
-</section>
+</div>
 @endsection
 
         

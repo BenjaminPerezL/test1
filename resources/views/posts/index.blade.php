@@ -14,20 +14,21 @@
                             <input type="text" id="subtitulo" name="subtitulo" style="width: 300px"><br>
                         </div>
                         <div class="ingreso formulario">
-                            <label for="tema" >Tema     :</label><br>
+                            <label for="tema" >Tema/Nombre link     :</label><br>
                             <input type="text" id="tema" name="tema" class="form-control" style="width: 300px"><br>
                         </div>
                         <div class="ingreso formulario">
-                            <label for="link" >Link     :</label><br>
+                            <label for="link" >Link (url)    :</label><br>
                             <input type="text" id="link" name="link" style="width: 300px"><br>
                         </div>
                         <div class="ingreso formulario">
-                            <label for="imagen" >Imagen     :</label><br>
+                            <label for="imagen" >Ruta Imagen     :</label><br>
                             <input type="text" id="imagen" name="imagen" style="width: 300px"><br>
                         </div>
                         <div class="ingreso formulario">
                             <label for="usuario" >Usuario     :</label><br>
-                            <select style="width: 150px" id="usuario" name="usuario">
+                            <select style="width: 150px" id="usuario" name="usuario" >
+                                <option value="" selected>Seleccione</option>
                                 @foreach ($usuarios as $usuario)
                                 <option value="{{$usuario->id}}">{{$usuario->nombre}}</option>
                                 @endforeach

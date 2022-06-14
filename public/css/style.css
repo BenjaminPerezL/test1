@@ -158,25 +158,25 @@ a {
 .info.tabla.usuarios{
     display: inline-block;
     width: 49%;
-    position: relative;
+    position: absolute;
     right: 90px;
     
 }
 
 .formulario-usuarios{
     display: inline-block;
-    width: 50%;
-    position: relative;
-    left: 360px;
-    bottom:14%;
+    width: auto;
+    position: absolute;
+    left: 500px;
+    
 }
 
 .formulario-posts{
     display: inline-block;
-    position:relative;
+    position:absolute;
     left:300px;
     /* bottom:10%; */
-    top:100px;
+    top:320px;
     width: auto;
 }
 
@@ -196,8 +196,8 @@ form{
 .postcontainer{
     width: 510px;
     margin: 0 auto;
-    position: relative;
-    bottom: 300px;
+    position: absotule;
+    top: 300px;
 }
 
 td, th {
@@ -248,7 +248,8 @@ article img{
 
 
 footer{
-       
+    margin-top: 50%;
+    width: 96%;
     padding: 2rem;
     background-color: rgb(39, 38, 38);
     color: whitesmoke;
