@@ -155,23 +155,30 @@ a {
     color: aqua;
 }
 
-.tabla.usuarios{
+.info.tabla.usuarios{
+    display: inline-block;
+    width: 49%;
+    position: relative;
+    right: 90px;
+    
+}
+
+.formulario-usuarios{
     display: inline-block;
     width: 50%;
-    
+    position: relative;
+    left: 360px;
+    bottom:14%;
 }
 
-
-
-.formulario.usuarios{
+.formulario-posts{
     display: inline-block;
-    
-     
-    width: 100%;
-    
-
+    position:relative;
+    left:300px;
+    /* bottom:10%; */
+    top:100px;
+    width: auto;
 }
-
 
 .ingreso.formulario{
     padding: 4px;
@@ -189,6 +196,8 @@ form{
 .postcontainer{
     width: 510px;
     margin: 0 auto;
+    position: relative;
+    bottom: 300px;
 }
 
 td, th {
@@ -236,8 +245,6 @@ article img{
     width: 450px;
     height: 450px;
 }
-
-
 
 
 footer{
@@ -322,4 +329,8 @@ form{
 
 form button{
     height: 2rem;
+}
+
+article h2{
+    margin-top: 10px;
 }

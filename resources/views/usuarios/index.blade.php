@@ -1,26 +1,8 @@
 @extends('/layouts/master')
 
 @section('contenido-principal')
-    <div class="info formulario">
-        <div class="tabla usuarios">
-            <table>
-                <tr>
-                <th>Nro</th>
-                <th>Nombre</th>
-                <th>Email</th>
-                </tr>
-    @foreach ($usuariosdb as $num=>$usuario)
     
-                <tr>
-                <td>{{$num+1}}</td>
-                <td>{{$usuario->nombre}}</td>
-                <td>{{$usuario->correo}}</td>
-                </tr>
-        
-    @endforeach
-            </table>
-        </div>
-        <div class="formulario usuarios">
+        <div class="formulario-usuarios">
             <form method="POST" action="{{route('usuarios.store')}}">
                 @csrf
                 <label for="nombre">Nombre:</label><br>
@@ -37,5 +19,28 @@
                 </div>
             </form> 
         </div>
-    </div>
+
+
+        <div class="info tabla usuarios">
+            <div class="tabla usuarios">
+                <table>
+                    <tr>
+                    <th>Nro</th>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    </tr>
+        @foreach ($usuariosdb as $num=>$usuario)
+        
+                    <tr>
+                    <td>{{$num+1}}</td>
+                    <td>{{$usuario->nombre}}</td>
+                    <td>{{$usuario->correo}}</td>
+                    </tr>
+            
+        @endforeach
+                </table>
+            </div>
+            
+        </div>
+    
 @endsection

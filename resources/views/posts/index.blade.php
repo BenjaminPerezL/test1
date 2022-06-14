@@ -2,7 +2,7 @@
 
 @section('contenido-principal')
 
-                <div class="formulario usuarios">
+                <div class="formulario-posts">
                     <form method="POST" action="{{route('posts.store')}}">
                         @csrf
                         <div class="ingreso formulario">
