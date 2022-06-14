@@ -25,7 +25,7 @@
                         <a class="nombremenu @if(Route::current()->getName()=='home.index')active @endif" href="{{route('home.index')}}">Home</a>
                     </div>
                     <div class="itemmenu">
-                        <a class="nombremenu " href="/secciones">Secciones</a>
+                        <a class="nombremenu " href="{{route('posts.index')}}">Posts</a>
                     </div>
                     <div class="itemmenu">
                         <a class="nombremenu" href="{{route('usuarios.index')}}">Usuarios</a>
